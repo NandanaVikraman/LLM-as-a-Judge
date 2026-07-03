@@ -1,0 +1,20 @@
+# Core ML/NLP Libraries
+# NOTE: Python 3.8+ strongly recommended
+# For Python 3.6 (not recommended), use older versions:
+torch>=1.10.0
+transformers>=4.20.0
+datasets>=2.0.0
+huggingface-hub>=0.10.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: Accelerate for faster inference
+accelerate>=0.24.0
+
+# Optional: For quantization and optimization
+bitsandbytes>=0.41.0
+
+# Optional: For better progress bars
+tqdm>=4.66.0
+

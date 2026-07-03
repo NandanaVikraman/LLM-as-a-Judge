@@ -1,0 +1,13 @@
+TASK: Your task is to MODIFY the below code by introducing a subtle conditional logic error.
+You must apply ATLEAST ONE modification from the options below to the existing code:
+
+Option A: Change ONE comparison operator in any control flow statement
+
+Option B: Change ONE boolean operator in any control flow statement
+
+Return only the code and nothing else. Do NOT include explanations or comments or language.
+
+--------------
+
+The code is
+{code}

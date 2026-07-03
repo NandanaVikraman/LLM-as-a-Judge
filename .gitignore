@@ -1,0 +1,7 @@
+.env
+*.csv
+*.ipynb
+dataset/
+__pycache__/
+*.pyc
+outputs/

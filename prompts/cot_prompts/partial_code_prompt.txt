@@ -1,0 +1,164 @@
+Your task is to evaluate which candidate correctly completes a partial code implementation.
+
+Given:
+- A problem description
+- Partial code with a gap to fill
+- Two candidate completions (A and B)
+
+You must:
+1. Write your analysis as a flowing paragraph (not bullet points)
+2. Explain what each candidate does and whether it's correct
+3. State your conclusion
+4. End with "Final Label: A" or "Final Label: B"
+
+IMPORTANT: 
+- Write in natural prose, like the examples below
+- After your reasoning paragraph, you MUST end with exactly:
+Final Label: A
+or
+Final Label: B
+- Do NOT add any additional text after the final label
+
+Below are examples showing how to approach this task:
+
+---
+
+Example 1 — Python  
+
+INPUT:
+
+    Problem:
+    Given a list of integers, return how many of them are even.
+
+    Partial Code:
+        def count_evens(nums):
+            count = 0
+            for n in nums:
+                <fill here>
+            return count
+
+    Candidate A:
+        if n % 2 == 0:
+            count += 1
+
+    Candidate B:
+        if n % 2 == 1:
+            count += 1
+
+
+OUTPUT:
+
+    Reasoning:
+    The task is to count how many integers in the list are even. The function iterates through nums with "for n in nums:", maintaining count that starts at 0 and is returned at the end. Candidate A fills the gap with "if n % 2 == 0: count += 1", which checks if n is divisible by 2 with no remainder (i.e., even). When the loop encounters even numbers like 2, 4, or 6, the condition is true and count increments correctly. When n is odd, the condition is false and count remains unchanged. Candidate B fills the gap with "if n % 2 == 1: count += 1", which checks if n has remainder 1 when divided by 2 (i.e., odd numbers). This counts odd numbers instead of even numbers, which is incorrect for the given requirement. Thus, Candidate A correctly implements the even counting logic.
+
+    Final Label: A
+
+
+
+Example 2 — Java  
+
+INPUT:
+
+    Problem:
+    Given an array of integers, return how many elements are strictly greater than 10.
+
+    Partial Code:
+        public int countGreaterThanTen(int[] nums) {
+            int count = 0;
+            for (int n : nums) {
+                <fill here>
+            }
+            return count;
+        }
+
+    Candidate A:
+        if (n > 10) {
+            count++;
+        }
+
+    Candidate B:
+        if (n >= 10) {
+            count++;
+        }
+
+
+OUTPUT:
+
+    Reasoning:
+    The requirement is to count elements strictly greater than 10, meaning 10 itself should not be counted. The function loops through the array with "for (int n : nums)", maintaining count that starts at 0 and is returned at the end. Candidate A fills the gap with "if (n > 10) { count++; }", using the strict inequality operator. When n is 11 or higher, the condition is true and count increments. When n is exactly 10, the condition is false and count stays unchanged, correctly excluding 10. Candidate B fills the gap with "if (n >= 10) { count++; }", using greater-than-or-equal. This means when n is 10, the condition is true and count increments, incorrectly including 10 in the count. This violates the "strictly greater" requirement. Thus, Candidate A correctly enforces the boundary condition by excluding 10.
+
+    Final Label: A
+
+
+
+Example 3 — JavaScript  
+
+INPUT:
+
+    Problem:
+    Given a list of strings, return how many strings start with the character 'a'.
+
+    Partial Code:
+        function countStartingWithA(words) {
+            let total = 0;
+            for (let w of words) {
+                <fill here>
+            }
+            return total;
+        }
+
+    Candidate A:
+        if (w.endsWith('a')) {
+            total++;
+        }
+
+    Candidate B:
+        if (w.startsWith('a')) {
+            total++;
+        }
+
+ 
+
+OUTPUT:
+
+    Reasoning:
+    The task is to count strings whose first character is 'a'. The function loops through words with "for (let w of words)", maintaining total that starts at 0 and is returned. Candidate A fills the gap with "if (w.endsWith('a')) { total++; }", which uses the JavaScript method endsWith to check the last character of the string. For words like "banana" or "pizza" that end with 'a', this condition would be true and total would increment. However, this checks the wrong position—we need the first character, not the last. Candidate B fills the gap with "if (w.startsWith('a')) { total++; }", which uses startsWith to check if the string begins with 'a'. For words like "apple" or "ant", this correctly identifies strings starting with 'a' and increments total. Thus, Candidate B correctly checks the first character as required.
+
+    Final Label: B
+
+
+
+Example 4 — C++  
+
+INPUT:
+
+    Problem:
+    Given a vector of integers, return how many elements are exactly equal to 42.
+
+    Partial Code:
+        int countFortyTwos(const vector<int>& nums) {
+            int cnt = 0;
+            for (int x : nums) {
+                <fill here>
+            }
+            return cnt;
+        }
+
+    Candidate A:
+        if (x != 42) {
+            cnt++;
+        }
+
+    Candidate B:
+        if (x == 42) {
+            cnt++;
+        }
+
+    
+
+OUTPUT:
+
+    Reasoning:
+    The task is to count integers that are exactly equal to 42. The function loops through the vector with "for (int x : nums)", maintaining cnt that starts at 0 and is returned. Candidate A fills the gap with "if (x != 42) { cnt++; }", using the not-equal operator. When x is 42, the condition x != 42 is false, so cnt is not incremented. When x is any other value like 41, 43, or 100, the condition is true and cnt increments. This means cnt reflects how many elements are NOT equal to 42, which is the opposite of what we want. Candidate B fills the gap with "if (x == 42) { cnt++; }", using the equality operator. When x is exactly 42, the condition is true and cnt increments. When x is any other value, the condition is false and cnt stays unchanged. This correctly counts only elements equal to 42, matching the requirement. Thus, Candidate B correctly implements the counting logic.
+
+    Final Label: B

@@ -1,0 +1,8 @@
+Your task is to modify the problem slightly by changing one or two constraints or assumptions, while keeping the rest of the description as similar as possible.
+
+The modified version should look realistic and coherent, but the required logic to solve it should differ subtly from the original.
+Do not return the prompt or any titles or comments.
+Output only the modified problem as one unit and nothing else.
+-----
+Problem description:
+{problem}

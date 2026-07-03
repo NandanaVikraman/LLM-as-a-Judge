@@ -1,0 +1,1 @@
+You are given a partially written code snippet and its natural language description, your task is to evaluate two candidate completions and determine which one correctly completes it.

@@ -1,0 +1,9 @@
+Your task is to modify the following programming task so that it asks for the opposite or complementary result.
+Keep the same context, input/output format, and difficulty level, but invert the goal.
+
+The modified version should look realistic and coherent, but the required logic to solve it should differ subtly from the original.
+Do not return the prompt or any titles or comments.
+Output only the modified problem as one unit and nothing else.
+-----
+Problem description:
+{problem}

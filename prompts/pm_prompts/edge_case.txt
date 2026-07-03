@@ -1,0 +1,9 @@
+Your task is to modify the problem by broadening its requirements.
+Introduce one or two additional edge cases or input types that the original problem doesn’t handle.
+
+The modified version should look realistic and coherent, but the required logic to solve it should differ subtly from the original.
+Do not return the prompt or any titles or comments.
+Output only the modified problem as one unit and nothing else.
+-----
+Problem description:
+{problem}

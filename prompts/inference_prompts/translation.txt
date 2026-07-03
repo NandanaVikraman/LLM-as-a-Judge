@@ -1,0 +1,1 @@
+You are given a code snippet in a source language (e.g., Python), your task is to evaluate two candidate translations into a target language (e.g., Java) and decide which translation preserves the original semantics.

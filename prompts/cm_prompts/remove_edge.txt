@@ -1,0 +1,17 @@
+TASK: You are given a problem statement and its correct code solution. Your task is to MODIFY this code by removing the handling for an important edge case.
+You must apply ATLEAST ONE modification from the options below to the existing code:
+
+Option A: Remove or disable the condition that handles special inputs (e.g., empty list, zero, negative numbers, or single-element cases).
+
+Option B: Delete or bypass the return/guard statement that prevents failure for such edge cases.
+
+Option C: Skip initialization or adjustment logic that only runs for edge cases.
+
+Return only the code and nothing else. Do NOT include explanations or comments or language.
+
+----------------
+The problem statement is:
+{problem}
+
+The code is
+{code}

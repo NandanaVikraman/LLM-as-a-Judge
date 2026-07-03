@@ -1,0 +1,1 @@
+You are given a code snippet and two candidate natural language summaries. Your task is to determine which candidate provides the correct and precise description.

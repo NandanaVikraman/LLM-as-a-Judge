@@ -1,0 +1,10 @@
+TASK: Your task is to MODIFY this code by introducing a subtle off-by-one or boundary-related bug.
+You must apply ATLEAST ONE modification from the options below to the existing code:
+
+Option A: Change ONE loop bound by ±1 (e.g., range/for/while start or end) so it skips or includes one extra element.
+
+Option B: Change ONE boundary check or index by ±1 (e.g., switch < to <= or > to >= in a limit check, or shift a single index/slice start/end by 1).
+Return only the code and nothing else. Do NOT include explanations or comments or language.
+----------------
+The code is
+{code}

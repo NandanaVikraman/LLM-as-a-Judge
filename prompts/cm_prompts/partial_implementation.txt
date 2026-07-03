@@ -1,0 +1,15 @@
+TASK: Your task is to MODIFY this code by making it a partial implementation.
+You must apply ATLEAST ONE modification from the options below to the existing code:
+
+Option A: Remove ONE helper function or utility call that contributes to correctness.
+
+Option B: Omit ONE critical edge-case check or validation condition (e.g., a boundary or null check).
+
+Option C: Incomplete the logic in ONE branch by deleting a line or skipping a necessary computation.
+
+Return only the code and nothing else. Do NOT include explanations or comments or language.
+
+----------------
+
+The code is
+{code}

@@ -1,0 +1,11 @@
+Your task is to complete a given partial code
+1. Fill in the provided partial code so it solves the problem.
+2. Maintain the same function signature.
+
+Return only the lines that complete the code and nothing else. Do NOT include explanations or comments or language. Do NOT produce the full function or repeat existing lines. Do NOT change the partial code.
+-----
+Problem:
+{problem}
+
+Partial code:
+{code}

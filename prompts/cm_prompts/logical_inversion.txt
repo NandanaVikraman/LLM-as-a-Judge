@@ -1,0 +1,14 @@
+TASK: Your task is to MODIFY the code by introducing a small but impactful logic inversion.
+You must apply ATLEAST ONE modification from the options below to the existing code:
+
+Option A: Negate a condition (e.g., change `if x > y` to `if x <= y`, or `if flag` to `if not flag`).
+
+Option B: Swap the true and false branches of ONE if-else block.
+
+Option C: Invert a boolean test (e.g., change `return condition` to `return not condition`).
+
+Return only the code and nothing else. Do NOT include explanations or comments or language.
+
+----------------
+The code is
+{code}
