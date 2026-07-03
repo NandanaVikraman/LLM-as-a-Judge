@@ -2,6 +2,10 @@
 *.csv
 *.ipynb
 dataset/
+data/
 __pycache__/
 *.pyc
 outputs/
+results/*.jsonl
+results/*.json
+!results/.gitkeep
