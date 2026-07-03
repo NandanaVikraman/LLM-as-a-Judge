@@ -7,6 +7,8 @@ This project investigates how reliably large language models (LLMs) can act as a
 
 Full writeup and poster: [`docs/Final_Report.pdf`](docs/Final_Report.pdf), [`docs/Poster.pdf`](docs/Poster.pdf)
 
+> **Note:** This was a larger course project split across two teams working on complementary parts of the same benchmark. This repository's codebase includes contributions from both teams. The report and poster above document the NeuroNauts team's portion of the work specifically; see the [Team](#team) section below for full contributor attribution.
+
 ## Problem Statement
 
 LLMs are increasingly used as automated judges in software engineering workflows — assessing code quality, evaluating translations, and comparing candidate solutions. Prior work shows these judges can exhibit systematic vulnerabilities: positional bias (favoring whichever candidate is placed first/second), bandwagon bias (being swayed by a stated "crowd preference"), and instability under reasoning-based prompting. Existing benchmarks mostly check whether the final answer is correct, but rarely test whether the judgment is robust to these non-semantic factors. This project builds a benchmark and evaluation pipeline specifically to measure that robustness.
@@ -135,6 +137,10 @@ Use `--position-mode random` to test position-bias robustness and `--variant ban
 
 ## Team
 
+This repository's codebase combines work from two teams that collaborated on complementary parts of this benchmark.
+
+**Team NeuroNauts** (Arizona State University, mentored by Dr. Neeraj Varshney) — see [`docs/Final_Report.pdf`](docs/Final_Report.pdf) for full methodology and results:
+
 | Name | Contribution |
 |---|---|
 | Megha Suresh | Unified dataset-creation pipeline; benchmarking framework (prompt construction, inference variants, evaluation scripts); large-scale experiment runs |
@@ -142,6 +148,12 @@ Use `--position-mode random` to test position-bias robustness and `--variant ban
 | Avantika Tiwari | Code summarization dataset preparation and evaluation |
 | Amulya Nekkanti | Code translation benchmarking; translation dataset verification and cleaning |
 | Jahnavi Krishna Kovvuri | Code translation A/B pair generation and judge-performance analysis |
+
+**Additional contributors** (second team, complementary portion of the project):
+
+- [Sagar6250](https://github.com/Sagar6250)
+- [kmathi-creator](https://github.com/kmathi-creator)
+- [Abhig2002](https://github.com/Abhig2002)
 
 ## Ongoing Work
 
