@@ -7,7 +7,7 @@ This project investigates how reliably large language models (LLMs) can act as a
 
 Full writeup and poster: [`docs/Final_Report.pdf`](docs/Final_Report.pdf), [`docs/Poster.pdf`](docs/Poster.pdf)
 
-> **Note:** This was a larger course project split across two teams working on complementary parts of the same benchmark. This repository's codebase includes contributions from both teams. The report and poster above document the NeuroNauts team's portion of the work specifically; see the [Team](#team) section below for full contributor attribution.
+> **Note:** This codebase was built jointly by two teams sharing the same underlying framework. One team built the core pipeline and infrastructure — the dataset-generation entry point (`main.py`), the execution-tracing task, the partial-code-completion task, and the Chain-of-Thought/Best-of-N/self-verification evaluation methods. The **NeuroNauts** team (this report's authors) built on top of that shared framework to run the **code summarization** and **code translation** benchmarking documented in [`docs/Final_Report.pdf`](docs/Final_Report.pdf) and [`docs/Poster.pdf`](docs/Poster.pdf). See [Team](#team) below for full contributor attribution.
 
 ## Problem Statement
 
@@ -65,7 +65,7 @@ See [`docs/Final_Report.pdf`](docs/Final_Report.pdf) for the full methodology, r
 
 ## Setup
 
-**Requirements:** Python 3.9+, a CUDA-capable GPU is strongly recommended (models are 3B–8B parameters).
+**Requirements:** Python 3.10+ (required by `main.py`'s `match` statement), a CUDA-capable GPU is strongly recommended (models are 3B–8B parameters).
 
 ```bash
 git clone https://github.com/NandanaVikraman/LLM-as-a-Judge.git
@@ -137,23 +137,25 @@ Use `--position-mode random` to test position-bias robustness and `--variant ban
 
 ## Team
 
-This repository's codebase combines work from two teams that collaborated on complementary parts of this benchmark.
+This repository's codebase combines work from two teams that shared the same underlying framework.
 
-**Team NeuroNauts** (Arizona State University, mentored by Dr. Neeraj Varshney) — see [`docs/Final_Report.pdf`](docs/Final_Report.pdf) for full methodology and results:
+**Team NeuroNauts** (Arizona State University, mentored by Dr. Neeraj Varshney) — built the code summarization and code translation benchmarking documented in [`docs/Final_Report.pdf`](docs/Final_Report.pdf):
 
 | Name | Contribution |
 |---|---|
-| Megha Suresh | Unified dataset-creation pipeline; benchmarking framework (prompt construction, inference variants, evaluation scripts); large-scale experiment runs |
-| Nandana Vikraman | Code summarization benchmarking; dataset creation and prompting-strategy testing |
+| [Megha Suresh](https://github.com/amm01u) | Unified dataset-creation pipeline; benchmarking framework (prompt construction, inference variants, evaluation scripts); baseline + bandwagon-bias evaluation; large-scale experiment runs |
+| [Nandana Vikraman](https://github.com/NandanaVikraman) | Code summarization task and dataset generation; self-verification evaluation updates; prompting-strategy testing |
 | Avantika Tiwari | Code summarization dataset preparation and evaluation |
 | Amulya Nekkanti | Code translation benchmarking; translation dataset verification and cleaning |
 | Jahnavi Krishna Kovvuri | Code translation A/B pair generation and judge-performance analysis |
 
-**Additional contributors** (second team, complementary portion of the project):
+**Second team** — built the shared pipeline infrastructure and additional judgment tasks this benchmark runs on:
 
-- [Sagar6250](https://github.com/Sagar6250)
-- [kmathi-creator](https://github.com/kmathi-creator)
-- [Abhig2002](https://github.com/Abhig2002)
+| Name | Contribution |
+|---|---|
+| [Sagar6250](https://github.com/Sagar6250) | Core pipeline architecture; Best-of-N evaluation; partial-code-completion task; prompting-structure design and bug fixes |
+| [kmathi-creator](https://github.com/kmathi-creator) | Execution-tracing task: prompts, wrapper, and refinements |
+| [Abhig2002](https://github.com/Abhig2002) | Chain-of-Thought evaluation implementation; self-verification script; LiveCodeBench dataset integration |
 
 ## Ongoing Work
 
