@@ -145,9 +145,9 @@ This repository's codebase combines work from two teams that shared the same und
 |---|---|
 | [Megha Suresh](https://github.com/amm01u) | Unified dataset-creation pipeline; benchmarking framework (prompt construction, inference variants, evaluation scripts); baseline + bandwagon-bias evaluation; large-scale experiment runs |
 | [Nandana Vikraman](https://github.com/NandanaVikraman) | Code summarization task and dataset generation; self-verification evaluation updates; prompting-strategy testing |
-| Avantika Tiwari | Code summarization dataset preparation and evaluation |
-| Amulya Nekkanti | Code translation benchmarking; translation dataset verification and cleaning |
-| Jahnavi Krishna Kovvuri | Code translation A/B pair generation and judge-performance analysis |
+| [Avantika Tiwari](https://github.com/Avantika-27) | Code summarization dataset preparation and evaluation |
+| [Amulya Nekkanti](https://github.com/AmulyaNekkanti03) | Code translation benchmarking; translation dataset verification and cleaning |
+| [Jahnavi Krishna Kovvuri](https://github.com/Jahnavik2002) | Code translation A/B pair generation and judge-performance analysis |
 
 **Second team** — built the shared pipeline infrastructure and additional judgment tasks this benchmark runs on:
 
